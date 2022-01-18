@@ -1130,14 +1130,17 @@ variable initialshift = 0  //for single video set as 0 temporarily.
 string fitname,bgname,fitaffix
 
 
-Prompt freq_video "Driving frequency of the movie to analysis"
+Prompt freq_video "Driving frequency of the movie to analyze"
 Prompt framerate, "framerate of the video"
-Prompt freq_input, "frequency of the signal"
+//Prompt freq_input, "frequency of the signal"
 Prompt reffreq, "frequency of the reference signal"
 Prompt corstring,"direction",  popup "X;Y"
 Prompt valstring, "value", popup "Magnitude; Phase"
 
-doprompt "input parameters",  freq_video,framerate, freq_input,  reffreq, corstring, valstring
+doprompt "input parameters",  freq_video,framerate,  reffreq, corstring, valstring
+
+
+freq_input = freq_video
 
 if ( stringmatch(corstring, "x")==1)
    corf=0
