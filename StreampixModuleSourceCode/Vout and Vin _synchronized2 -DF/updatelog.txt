@@ -1,5 +1,0 @@
-trymodule1: built-in generate wave
-trymodule2: read voltage from files
-trymodule3: improve the efficiency of the module
-trymodule4: low frequency output
-trymodule5: slow drop try to remove residual magnet
