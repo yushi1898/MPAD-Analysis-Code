@@ -1,0 +1,55 @@
+﻿Build started 4/12/2013 5:17:20 PM.
+     1>Project "C:\Users\User\Desktop\DemoModule\SampleDemoModule.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\TryModule.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\TryModule.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Norpix\ModuleSDK - StreamPix5\StreampixAPI" /I"C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\include" /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D _UNICODE /D UNICODE /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DemoModule.cpp DemoModuleDlg.cpp DemoModuleDLL.cpp DemoModuleModule.cpp StdAfx.cpp
+         DemoModule.cpp
+         DemoModuleDlg.cpp
+         DemoModuleDLL.cpp
+         DemoModuleModule.cpp
+     1>DemoModuleModule.cpp(172): warning C4102: 'Error' : unreferenced label
+     1>DemoModuleModule.cpp(128): warning C4101: 'read' : unreferenced local variable
+     1>DemoModuleModule.cpp(130): warning C4101: 'fp' : unreferenced local variable
+     1>DemoModuleModule.cpp(129): warning C4101: 'data' : unreferenced local variable
+         StdAfx.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IRelease\ /nologo /fo"Release\DemoModule.res" DemoModule.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\TryModule.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\lib32\msvc" /LIBPATH:"C:\Program Files\Norpix\ModuleSDK - StreamPix5\StreampixAPI\Release" /LIBPATH:"C:\Program Files\Norpix\Hermes\Release_Unicode" HermesAPIu.lib StreampixAPI.lib odbc32.lib odbccp32.lib nidaqmx.lib /DEF:".\DemoModule.def" /MANIFEST /ManifestFile:"Release\TryModule.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\User\Desktop\DemoModule\Release\TryModule.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Release\TryModule.lib" /MACHINE:X86 /DLL Release\DemoModule.res
+         Release\DemoModule.obj
+         Release\DemoModuleDlg.obj
+         Release\DemoModuleDLL.obj
+         Release\DemoModuleModule.obj
+         Release\StdAfx.obj
+            Creating library Release\TryModule.lib and object Release\TryModule.exp
+     1>TryModule.exp : warning LNK4070: /OUT:DemoModule.dll directive in .EXP differs from output filename 'Release\TryModule.dll'; ignoring directive
+         Generating code
+         Finished generating code
+     1>TryModule.exp : warning LNK4070: /OUT:DemoModule.dll directive in .EXP differs from output filename 'Release\TryModule.dll'; ignoring directive
+     1>StreampixAPI.lib(DockedDlg.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(ScriptEvent.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(CommandParam.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(ParamInfo.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(ScriptCommand.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(ScriptCommandInfo.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(ScriptVariable.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(VarBool.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(VarUINT.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(SetupManager.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(Module.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(ModuleDLL.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>StreampixAPI.lib(PlaybackSynchData.obj) : warning LNK4204: 'C:\Users\User\Desktop\DemoModule\Release\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         SampleDemoModule.vcxproj -> C:\Users\User\Desktop\DemoModule\Release\TryModule.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Release\TryModule.dll;#2" /manifest Release\TryModule.dll.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\TryModule.unsuccessfulbuild".
+         Touching "Release\TryModule.lastbuildstate".
+     1>Done Building Project "C:\Users\User\Desktop\DemoModule\SampleDemoModule.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.03

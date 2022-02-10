@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<Streampix4RecScript>
+    <STEP NAME="Main">
+        <COMMANDS>
+            <CALL_STEP>
+                <STEP NAME="less1recording">
+                    <COMMANDS>
+                        <NEW_AVI />
+                        <CALL_STEP>
+                            <STEP NAME="pre recording">
+                                <COMMANDS>
+                                    <SKIP_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="30" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                        <CALL_STEP>
+                            <STEP NAME="180s recording">
+                                <COMMANDS>
+                                    <GRAB_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="180" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                        <CALL_STEP>
+                            <STEP NAME="after recording">
+                                <COMMANDS>
+                                    <SKIP_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="30" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                    </COMMANDS>
+                    <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                    <CONDITIONS>
+                        <DO_X_TIMES Interrupt="1" TargetCount="4" />
+                    </CONDITIONS>
+                </STEP>
+            </CALL_STEP>
+            <CALL_STEP>
+                <STEP NAME="1to5recording">
+                    <COMMANDS>
+                        <NEW_AVI />
+                        <CALL_STEP>
+                            <STEP NAME="pre recording">
+                                <COMMANDS>
+                                    <SKIP_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="5" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                        <CALL_STEP>
+                            <STEP NAME="60s recording">
+                                <COMMANDS>
+                                    <GRAB_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="60" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                        <CALL_STEP>
+                            <STEP NAME="post recording">
+                                <COMMANDS>
+                                    <SKIP_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="5" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                    </COMMANDS>
+                    <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                    <CONDITIONS>
+                        <DO_X_TIMES Interrupt="1" TargetCount="6" />
+                    </CONDITIONS>
+                </STEP>
+            </CALL_STEP>
+            <CALL_STEP>
+                <STEP NAME="highfreqrecording">
+                    <COMMANDS>
+                        <NEW_AVI />
+                        <CALL_STEP>
+                            <STEP NAME="pre recording">
+                                <COMMANDS>
+                                    <SKIP_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="5" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                        <CALL_STEP>
+                            <STEP NAME="30s recording">
+                                <COMMANDS>
+                                    <GRAB_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="30" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                        <CALL_STEP>
+                            <STEP NAME="post recording">
+                                <COMMANDS>
+                                    <SKIP_FRAME />
+                                </COMMANDS>
+                                <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                                <CONDITIONS>
+                                    <FOR_TIME_X Interrupt="1" HH="0" MM="0" SS="5" MS="0" />
+                                </CONDITIONS>
+                            </STEP>
+                        </CALL_STEP>
+                    </COMMANDS>
+                    <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="0" MS="0" FrameCount="0" />
+                    <CONDITIONS>
+                        <DO_X_TIMES Interrupt="1" TargetCount="7" />
+                    </CONDITIONS>
+                </STEP>
+            </CALL_STEP>
+        </COMMANDS>
+        <LOOPCONTROL CurrentControl="0" HH="0" MM="0" SS="5" MS="0" FrameCount="0" />
+        <CONDITIONS>
+            <DO_X_TIMES Interrupt="1" TargetCount="1" />
+        </CONDITIONS>
+    </STEP>
+</Streampix4RecScript>
